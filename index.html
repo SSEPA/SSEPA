@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo - SSEPA</title>
+  <style>
+    :root{
+      --accent:#8fcf7f;
+      --dark:#0b2b18;
+      --muted:#6b6b6b;
+    }
+    body{
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      margin:0; color:#062617; background:#f7faf7;
+    }
+    .container{max-width:1100px;margin:36px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{
+      width:56px;height:56px;border-radius:8px;
+      background:linear-gradient(135deg,var(--accent),#5bb86a);
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700
+    }
+    nav a{
+      margin-left:18px;color:var(--dark);text-decoration:none;font-weight:600
+    }
+    .hero{
+      display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;
+      background:white;padding:28px;border-radius:12px;box-shadow:0 6px 18px rgba(10,20,10,0.06)
+    }
+    .hero img{width:100%;height:auto;border-radius:8px}
+    .hero h1{margin:0 0 10px;font-size:28px}
+    .cta{
+      display:inline-block;margin-top:14px;padding:10px 16px;
+      border-radius:8px;background:var(--dark);color:white;text-decoration:none;
+      transition: background 0.3s;
+    }
+    .cta:hover{background:#084d1a}
+    .grid{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;margin-top:20px
+    }
+    .card{
+      background:white;padding:16px;border-radius:10px;
+      box-shadow:0 4px 12px rgba(10,20,10,0.04)
+    }
+    .card h3{margin:0 0 8px}
+    .muted{color:var(--muted);font-size:14px}
+    footer{
+      margin-top:26px;padding:18px;border-radius:8px;background:#ffffff;text-align:center
+    }
+    .contacts{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+    img.producto{width:100%;height:auto;border-radius:8px;margin-bottom:8px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">SS</div>
+        <div>
+          <div style="font-weight:700">SSEPA</div>
+          <div class="muted">Soluciones en Energía Solar</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <img src="pdf_images/pagina_1.jpg" alt="Portada del catálogo SSEPA" />
+      </div>
+      <div>
+        <h1>CATÁLOGO — Servicios y Productos</h1>
+        <p class="muted">Instalaciones y mantenimientos de paneles solares, asesoramiento y venta de accesorios. Convertimos la energía solar en ahorro para tu hogar o negocio.</p>
+        <a class="cta" href="#contacto">Contáctanos</a>
+      </div>
+    </section>
+
+    <main>
+      <section id="servicios" style="margin-top:22px">
+        <h2>Servicios</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Instalación de paneles solares</h3>
+            <img class="producto" src="pdf_images/pagina_2.jpg" alt="Instalación de paneles solares" />
+            <p class="muted">Instalaciones de paneles solares de la más alta calidad.</p>
+          </div>
+          <div class="card">
+            <h3>Mantenimientos</h3>
+            <img class="producto" src="pdf_images/pagina_3.jpg" alt="Mantenimiento de paneles solares" />
+            <p class="muted">Limpieza de los paneles solares, mantenimientos preventivos y correctivos.</p>
+          </div>
+          <div class="card">
+            <h3>Asesoramiento</h3>
+            <img class="producto" src="pdf_images/pagina_4.jpg" alt="Asesoramiento solar" />
+            <p class="muted">Te acompañamos a encontrar y tomar la mejor decisión.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="productos" style="margin-top:22px">
+        <h2>Accesorios y Productos</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Panel solar monocristalino</h3>
+            <img class="producto" src="pdf_images/pagina_5.jpg" alt="Panel solar monocristalino" />
+            <p class="muted">Hechos de silicio monocristalino de alta pureza: más eficientes y duraderos.</p>
+          </div>
+
+          <div class="card">
+            <h3>Panel solar policristalino</h3>
+            <img class="producto" src="pdf_images/pagina_6.jpg" alt="Panel solar policristalino" />
+            <p class="muted">Fabricados con múltiples cristales de silicio.</p>
+          </div>
+
+          <div class="card">
+            <h3>Inversor central</h3>
+            <img class="producto" src="pdf_images/pagina_7.jpg" alt="Inversor central" />
+            <p class="muted">Solución para instalaciones con varios paneles.</p>
+          </div>
+
+          <div class="card">
+            <h3>Panel de película delgada / Microinversor</h3>
+            <img class="producto" src="pdf_images/pagina_8.jpg" alt="Panel de película delgada / Microinversor" />
+            <p class="muted">Menor costo por watt. Microinversores permiten monitoreo individual por panel.</p>
+          </div>
+
+          <div class="card">
+            <h3>Inversor híbrido</h3>
+            <img class="producto" src="pdf_images/pagina_9.jpg" alt="Inversor híbrido" />
+            <p class="muted">Ideal para lugares con cortes de luz.</p>
+          </div>
+
+          <div class="card">
+            <h3>Regulador PWM</h3>
+            <img class="producto" src="pdf_images/pagina_10.jpg" alt="Regulador PWM" />
+            <p class="muted">Buena eficiencia en sistemas de baja potencia.</p>
+          </div>
+
+          <div class="card">
+            <h3>Regulador y gestión de baterías</h3>
+            <img class="producto" src="pdf_images/pagina_11.jpg" alt="Regulador y gestión de baterías" />
+            <p class="muted">Permite gestionar energía solar, red eléctrica y baterías.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" style="margin-top:22px">
+        <h2>Contacto</h2>
+        <div class="card" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+          <div><strong>Email:</strong> <a href="mailto:ssepa123@gmail.com" class="cta">ssepa123@gmail.com</a></div>
+          <div><strong>Dirección:</strong> Calle Cualquiera 123, Cualquier Lugar</div>
+          <div><strong>Teléfono:</strong> (55) 1234-5678</div>
+          <div><strong>Sitio web:</strong> <a href="https://www.ssepa.com" target="_blank" class="cta">www.ssepa.com</a></div>
+          <div>
+            <a href="https://wa.me/525512345678" target="_blank" class="cta">WhatsApp SSEPA</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="font-weight:700">DI SÍ AL AHORRO.</div>
+      <div class="contacts">
+        <a href="mailto:ssepa123@gmail.com">ssepa123@gmail.com</a>
+        <a href="https://www.ssepa.com" target="_blank">www.ssepa.com</a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
